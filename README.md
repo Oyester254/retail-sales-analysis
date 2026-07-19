@@ -1,1 +1,63 @@
-# retail-sales-analysis
+# Retail Sales Performance Analysis
+
+## Overview
+
+An end-to-end analysis of Superstore retail sales data using SQL, Excel,
+and Power BI to identify profitability drivers and underperforming segments
+across regions, categories, and discount levels.
+
+## Business Questions
+
+1. Which product categories/sub-categories are most and least profitable?
+2. Which regions underperform in terms of profit margin?
+3. Does higher discounting reduce or eliminate profit — and is this worse
+   in specific categories like Furniture?
+4. Are there seasonal or monthly sales trends across the dataset?
+5. Which customer segment (Consumer, Corporate, Home Office) drives the
+   most revenue and profit?
+
+## Tools Used
+
+- **SQL** (SQLite) — data querying and business question analysis
+- **Excel** — data cleaning, pivot tables, ad-hoc analysis
+- **Power BI** — interactive dashboard and visualization
+
+## Dataset
+
+[Superstore Sales Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+— 9,994 retail orders (2014–2017), including order details, customer
+segment, product category, sales, discount, and profit for each line item.
+
+## Process
+
+1. **Data understanding** — reviewed structure, checked date formats,
+   confirmed one Order ID can span multiple product line items, and
+   spotted an early signal that high discounts correlate with negative
+   profit (e.g. a Furniture order with 45% discount resulted in a $383 loss).
+2. **SQL analysis** (see `/sql`) — queried the dataset across 5 dimensions
+   (sub-category, region, discount level, monthly trend, customer segment)
+   using SQLite to identify profitability drivers. Confirmed that discounting
+   is the single biggest lever affecting profit across the business.
+3. **Excel analysis** (see `/excel`) — _(in progress)_
+4. **Power BI dashboard** (see `/powerbi`) — _(in progress)_
+
+## Key Insights (SQL phase)
+
+- **Discounting is the biggest profit lever**: orders discounted above 20%
+  are unprofitable on average, and the 933 orders (9.3% of total) discounted
+  40%+ lost the business nearly $100k combined.
+- **Tables is the worst-performing sub-category**: $206,965.53 in sales but
+  a **-$17,725.48 loss** (-8.56% margin) — likely driven by heavy discounting.
+  Bookcases and Supplies are also unprofitable.
+- **Central region underperforms**: lowest profit margin (7.92%) of all
+  4 regions, despite solid sales volume — West leads at 14.94%.
+- **Strong seasonality**: sales dip every January–February and peak every
+  November–December, with an overall upward trend year-over-year (2017
+  was the strongest year).
+- **Consumer segment drives volume, not efficiency**: highest sales/profit
+  in absolute terms, but the lowest margin (11.55%) of the three segments —
+  Home Office is smaller but most profit-efficient (14.03%).
+
+## Dashboard Preview
+
+_(to be added once Power BI dashboard is complete)_
