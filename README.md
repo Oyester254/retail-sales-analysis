@@ -38,9 +38,6 @@ segment, product category, sales, discount, and profit for each line item.
    (sub-category, region, discount level, monthly trend, customer segment)
    using SQLite to identify profitability drivers. Confirmed that discounting
    is the single biggest lever affecting profit across the business.
-   - **Consistent year-over-year growth**: total sales grew from $484,247.50
-     (2014) to $733,215.26 (2017), with a strong acceleration in the final
-     two years — 2016 and 2017 combined account for over 58% of total sales.
 3. **Excel analysis** (see `/excel`) — cleaned the dataset (verified data
    types, checked for blanks/duplicates — none found), added calculated
    columns for Shipping Days and Discount Band, and built 3 pivot tables
@@ -49,7 +46,7 @@ segment, product category, sales, discount, and profit for each line item.
    figures cross-validated against SQL results with an exact match.
 4. **Power BI dashboard** (see `/powerbi`) — _(in progress)_
 
-## Key Insights (SQL phase)
+## Key Insights
 
 - **Discounting is the biggest profit lever**: orders discounted above 20%
   are unprofitable on average, and the 933 orders (9.3% of total) discounted
@@ -65,7 +62,12 @@ segment, product category, sales, discount, and profit for each line item.
 - **Consumer segment drives volume, not efficiency**: highest sales/profit
   in absolute terms, but the lowest margin (11.55%) of the three segments —
   Home Office is smaller but most profit-efficient (14.03%).
+  - **Consistent year-over-year growth**: total sales grew from $484,247.50
+    (2014) to $733,215.26 (2017), with a strong acceleration in the final
+    two years — 2016 and 2017 combined account for over 58% of total sales.
 
-## Dashboard Preview
+## Visual Highlights
 
-_(to be added once Power BI dashboard is complete)_
+![Sub-Category Profit](images/excel_subcategory_chart.png)
+![Monthly Trend](images/excel_monthly_trend_chart.png)
+![Regional Profit Distribution](images/excel_region_chart.png)
