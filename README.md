@@ -38,7 +38,15 @@ segment, product category, sales, discount, and profit for each line item.
    (sub-category, region, discount level, monthly trend, customer segment)
    using SQLite to identify profitability drivers. Confirmed that discounting
    is the single biggest lever affecting profit across the business.
-3. **Excel analysis** (see `/excel`) — _(in progress)_
+   - **Consistent year-over-year growth**: total sales grew from $484,247.50
+     (2014) to $733,215.26 (2017), with a strong acceleration in the final
+     two years — 2016 and 2017 combined account for over 58% of total sales.
+3. **Excel analysis** (see `/excel`) — cleaned the dataset (verified data
+   types, checked for blanks/duplicates — none found), added calculated
+   columns for Shipping Days and Discount Band, and built 3 pivot tables
+   with charts (Sub-Category profitability, Regional margin, Monthly
+   trend) with conditional formatting to flag loss-making orders. All
+   figures cross-validated against SQL results with an exact match.
 4. **Power BI dashboard** (see `/powerbi`) — _(in progress)_
 
 ## Key Insights (SQL phase)
