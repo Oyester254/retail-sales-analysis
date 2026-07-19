@@ -68,9 +68,9 @@ segment, product category, sales, discount, and profit for each line item.
 - **Consumer segment drives volume, not efficiency**: highest sales/profit
   in absolute terms, but the lowest margin (11.55%) of the three segments —
   Home Office is smaller but most profit-efficient (14.03%).
-  - **Consistent year-over-year growth**: total sales grew from $484,247.50
-    (2014) to $733,215.26 (2017), with a strong acceleration in the final
-    two years — 2016 and 2017 combined account for over 58% of total sales.
+- **Consistent year-over-year growth**: total sales grew from $484,247.50
+  (2014) to $733,215.26 (2017), with a strong acceleration in the final
+  two years — 2016 and 2017 combined account for over 58% of total sales.
 
 ## Visual Highlights
 
