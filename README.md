@@ -44,7 +44,13 @@ segment, product category, sales, discount, and profit for each line item.
    with charts (Sub-Category profitability, Regional margin, Monthly
    trend) with conditional formatting to flag loss-making orders. All
    figures cross-validated against SQL results with an exact match.
-4. **Power BI dashboard** (see `/powerbi`) — _(in progress)_
+4. **Power BI dashboard** (see `/powerbi`) — built a 2-page interactive
+   dashboard with a custom date dimension table and 5 DAX measures
+   (Total Sales, Total Profit, Profit Margin %, Total Orders, YoY Sales
+   Growth %). The Overview page features KPI cards, a Sub-Category profit
+   chart, Regional margin comparison, and a monthly sales trend line; the
+   Details page includes a filled map of sales by state. Both pages are
+   fully interactive with Region, Category, and Year slicers.
 
 ## Key Insights
 
@@ -68,6 +74,28 @@ segment, product category, sales, discount, and profit for each line item.
 
 ## Visual Highlights
 
+### Power BI Dashboard
+
+![Overview Page](images/powerbi_overview.png)
+![Details Page](images/powerbi_details.png)
+
+### Excel Pivot Charts
+
 ![Sub-Category Profit](images/excel_subcategory_chart.png)
 ![Monthly Trend](images/excel_monthly_trend_chart.png)
 ![Regional Profit Distribution](images/excel_region_chart.png)
+
+## Summary
+
+This project demonstrates a full analytics workflow — from raw data to
+business insight — using three of the most common tools in a data
+analyst's toolkit. Key findings consistently pointed to **discounting
+strategy** as the biggest controllable driver of profitability: orders
+discounted above 20% are unprofitable on average, this pattern is
+concentrated in specific sub-categories (Tables, Bookcases) and the
+Central region, and correcting it represents a clear, quantifiable
+opportunity (~$135k in combined losses from Medium/High discount bands
+alone) without needing any new sales volume.
+
+All figures were cross-validated across SQL, Excel, and Power BI to
+confirm consistency across tools.
